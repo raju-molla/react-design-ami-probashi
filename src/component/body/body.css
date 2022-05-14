@@ -1,0 +1,55 @@
+.bodyContainer{
+    margin-top: 10px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body{
+    display: flex;
+    width: 70%;
+    /* height: 50px; */
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: black; */
+}
+.imgOne{
+    width: 30%;
+    display: flex;
+    justify-content: end;
+}
+.imgOne img{
+    width: 80%;
+}
+.imgTwo{
+    width: 68%;
+    margin-left: 2%;
+}
+
+.imgTwo h2{
+    font-size: 35px;
+    opacity: 0.5;
+}
+.imgTwo img{
+    margin-top: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 792px) {
+    
+} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */

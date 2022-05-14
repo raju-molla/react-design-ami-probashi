@@ -1,0 +1,65 @@
+.footerContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    
+}
+.footer{
+    width: 70%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.logo{
+    width: 30%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 80px;
+}
+.social{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.desc{
+    color: gray;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.media{
+    color: gray;
+    /* margin-right: 10px; */
+}
+.icon{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.icon:hover{
+    color: white;
+    transition: ease 1s;
+    /* transform: 5s; */
+}
+.nitimala{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
