@@ -1,6 +1,7 @@
 .footerContainer{
     width: 100%;
     display: flex;
+    height: auto;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
@@ -9,6 +10,7 @@
 }
 .footer{
     width: 70%;
+    height: auto;
     background-color: black;
     color: white;
     display: flex;
@@ -62,4 +64,29 @@
     color: gray;
     text-decoration: underline;
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px){
+    .logo img{
+        width: 150px;
+    }
+    .logo{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .footer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social{
+        width: 100%;
+       
+    }
+    .nitimala{
+        width: 100%;
+    }
 }

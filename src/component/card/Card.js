@@ -5,7 +5,7 @@ import {data} from '../data/data'
 const Card = () => {
     // console.log(data[0].title);
   return (
-    <div className='cardContainer'>
+    <div className='cardContainer' id='aboutus'>
         <div className='card'>
             {
                 data.map(ele=>(

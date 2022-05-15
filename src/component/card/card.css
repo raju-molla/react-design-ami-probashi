@@ -1,6 +1,7 @@
 .cardContainer {
   margin-top: 50px;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +10,9 @@
 }
 .card {
   width: 60%;
+  height: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 .cardItem {
   width: 23%;
@@ -51,4 +54,63 @@
 .email{
   font-weight: 900;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 991px){
+  .card{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardItem{
+    width: 45%;
+    height: 400px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    height: 320px;
+  }
+  .cardItem img {
+    width: 150px;
+  }
+  .CardDesc h4{
+    font-size: 20px;
+  }
+  .CardDesc p{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .communication h2{
+    font-size: 34px;
+  }
+  .communication span{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 716px){
+  .cardItem img {
+    width: 125px;
+  }
+  .CardDesc h4{
+    font-size: 28px;
+  }
+  .CardDesc p{
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+}
+@media only screen and (max-width: 575px){
+  .card{
+    width: 80%;
+  }
+  .cardItem {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+  .cardItem img {
+    width: 50%;
+  }
+  
+  
 }

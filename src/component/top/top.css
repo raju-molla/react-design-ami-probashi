@@ -14,8 +14,10 @@
   /* background-color: black; */
 }
 .topLeft {
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: start;
 }
 .topLeft img {
   height: 80px;
@@ -24,35 +26,137 @@
   cursor: pointer;
 }
 .topRight {
+  width: 70%;
   display: flex;
   align-items: center;
+  justify-content: start;
 }
 .topRight ul {
   display: flex;
 }
 .topRight ul li {
+  text-decoration: none;
   list-style: none;
   margin-left: 20px;
   font-weight: 600;
   opacity: 0.5;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 }
+.menu{
+  display: none;
+  position: relative;
+}
 .hamburger {
-  display:none;
+  /* display:none; */
   color: red;
- 
+  position: absolute;
+  top: 26px;
+  /* left: 0; */
+  
   /* font-size: 50px; */
   /* margin-top: ; */
 }
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+
 
 /* responsive */
 
+
 @media only screen and (max-width: 768px) {
-  .topRight {
+  .topLeft img{
+    height: 100px;
+    width: 100px;
+  }
+  .inactive {
     display: none;
   }
-  .hamburger {
+  .active{
+    display: block;
+    position: relative;
+    z-index: 999;
+    
+  }
+  .active ul{
+    width: 107px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 190px;
+    top: 83px;
+    box-shadow: 0px 0px 13px 6px grey;
+    background-color: rgb(235, 242, 242);
+    border-radius: 10px;
+}
+  
+  
+  .active ul li{
+    padding-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 0;
+    opacity: 1;
+    font-size: 16px;
+    
+  }
+  
+  .menu {
     display: block;
   }
+  
 }
+
+@media only screen and (max-width: 627px){
+  .active ul{
+    left: 150px;    
+  }
+  .active ul li{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 0;
+    opacity: 1;
+    font-size: 14px;
+    
+  }
+  
+}
+
+
+@media only screen and (max-width: 515px){
+  .active ul{
+    left: 100px;    
+  }
+  .active ul li{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 0;
+    opacity: 1;
+    font-size: 14px;
+    
+  }
+  
+}
+
+
+@media only screen and (max-width: 459px){
+  .active ul{
+    left: 60px;    
+  }
+  .active ul li{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-left: 0;
+    opacity: 1;
+    font-size: 12px;
+    
+  }
+  
+}
+
